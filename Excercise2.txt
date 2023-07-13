@@ -1,0 +1,17 @@
+var readlinesync = require("readline-sync");
+var score=0;
+var askAge = readlinesync.question("What is your age?");
+
+console.log("You entered "+ askAge);
+
+
+if(askAge == 25){
+  console.log("You are right!");
+  score=score+1;
+  console.log("score is " + score);
+}
+else{
+  console.log("You are wrong!");
+  score=score-1;
+  console.log("score is " +score);
+}

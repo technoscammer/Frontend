@@ -1,0 +1,29 @@
+
+// var readlineSync = require('readline-sync');
+
+// var messageName = readlineSync.question("What is your name?")
+// // console.log(messageName);
+
+// console.log("My name is " + messageName +" !");
+
+// // var favFood = readlineSync.question('What is your favorite food? ', {
+// //   hideEchoBack: true // The typed text on screen is hidden by `*` (default).
+// // });
+
+
+
+// var favFood = readlineSync.question("what is you fav food?",{
+//   hideEchoBack: true
+// });
+
+// console.log("Hi "+messageName + " your favourite food is " + favFood + "!");
+
+
+var readLineSync = require('readline-sync');
+
+if (readLineSync.keyInYN("What is your age?")){
+  console.log("Yes");
+}
+else{
+  console.log("No");
+}
