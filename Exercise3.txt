@@ -1,0 +1,26 @@
+var readlineSync = require("readline-sync");
+
+function play(question, answer){
+  var userAnswer = readlineSync.question(question);
+  
+
+  if(userAnswer === answer){
+    console.log("You are right!");
+  }else{
+    console.log("You are wrong! ");
+    
+  }
+}
+
+play("What is your name? ", "xyz");
+
+
+
+////use a loop to print 22+i -- 10 times
+
+
+
+for(var i=0; i<10; i++){
+  var sum=22+i;
+  console.log(sum);
+}
